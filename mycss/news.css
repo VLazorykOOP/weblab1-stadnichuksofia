@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: #014a83;
+}
+.white{
+    background-color: #fff;
+}
+.header-padding{
+    padding: 4px 48px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+}
+.header-con{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    letter-spacing: 4px;
+}
+.header-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-con a{
+    position: relative;
+    padding-left: 22px;
+}
+.hover:hover{
+    background-color: #b5b4b4;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.opacity{
+    opacity: 0.6;
+}
+.margin{
+    margin: 16px;
+}
+.head{
+    text-align: center;
+    padding: 36px 16px;
+}
+.head h1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.left{
+    width: 63%;
+}
+.right{
+    width: 32%;
+    height: 100%;
+}
+.img{
+    width: 100%;
+}
+.padding{
+    padding: 1px 16px;
+}
+.xlpadding{
+    padding: 12px 24px;
+}
+.card-header h2{
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.card-header h4{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card-row{
+    display: flex;
+    justify-content: space-between;
+}
+.row-button{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+.card-row span{
+    margin-left: 8px;
+    background-color: #060558;
+    color: #fff;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+.row-span{
+    border-radius: 5%;
+}
+.right-h{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.right-header{
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+}
+.list li{
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+li img{
+    margin-right: 16px;
+    width: 100px;
+}
+.list-top{
+    font-size: 18px;
+}
+.list li:hover{
+    background-color: #82abca;
+} 
+.row-button:hover{
+    background-color: #ccc;
+}

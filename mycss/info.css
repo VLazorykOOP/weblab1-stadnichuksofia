@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    font-style: italic; 
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0
+}
+ul{
+    list-style: none;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgb(0, 32, 92);
+}
+.header-con{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-padding{
+    padding: 4px 48px;
+}
+.header a{
+    text-decoration: none;
+    color: rgb(0, 32, 92);
+    padding: 8px 16px;
+    letter-spacing: 4px;
+}
+.header-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-con a{
+    position: relative;
+    padding-left: 22px;
+}
+
+.main-content{
+    padding: 4% 3% 2%;
+    display: flex;
+}
+.left {
+    width: 32%;
+    box-shadow: rgba(64, 65, 66, 0.35) 0px 5px 15px;
+}
+.right{
+    width: 75%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.left-img{
+    background-image: url('https://i.pinimg.com/564x/cf/09/ac/cf09ac0f9c0c3dcc9ad0f2378e25e9fd.jpg');
+    background-position: center;
+    height: 300px;
+    display: flex;
+}
+.left-h{
+    align-self: flex-end;
+    font-size: 40px;
+    margin: 0px 16px;
+    font-weight: bolder;
+    color: #05485c;
+}
+.left-text{
+    padding: 0 16px;
+    color: #1b84a4;
+}
+hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+.p-large{
+    font-size: 18px;
+    margin: 18px 0;
+}
+.icons{
+    font-size: 4px;
+    margin: 0 8px 0 0;
+    color: #002896;
+}
+.div-light-grey{
+    background-color: #e8eef1;
+    border-radius: 15px;
+} 
+.div-round{
+    background-color: #0190c0;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 2px 0;
+}
+.right{
+    color: #020c3f;
+    padding: 0 16px;
+}
+.right-top{
+    padding: 10px 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 16px;
+}
+.right-h{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 15px 0 33px 0;
+}
+.right-top-text {
+    padding: 0 16px;
+}
+h5{
+    font-size: 18px;
+    margin: 20px 0;
+}
+h6{
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+.h6-icon{
+    margin: 0 16px 0 0;
+    font-size: 1.3em;
+    color: #000296;
+}
+span{
+    background-color: #009688;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 300;
+}
+.right-top-text p{
+    margin: 6px 0;
+    color: #034a5c;
+}
+.right-bot{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 16px;
+} 
+.footer-hover:hover{
+    opacity: 0.6;
+}
