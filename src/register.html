@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../mycss/info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Who am I?</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-con header-padding">
+            <div class="header-right header-padding">
+                <ul class="header-list">
+                    <li><a class="hover" href="./news.html" target="_blank"><u>News</u></a></li>
+                    <li><a class="hover" href="../index.html"><u>Store</u></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="left" style="background: palegoldenrod; padding: 10px;">
+                <div>
+                    <form action="#">
+                        <input type="image"
+                            src="https://truegrit331.files.wordpress.com/2017/10/when-you-know-better-you-do-better.jpg"
+                            alt="Submit" width="50%" height="15%" formtarget="_blank">
+                    </form>
+                    <picture>
+                        <source srcset="https://signup.pay.nl/registration_hero.08a521e42ddfa25f.avif"
+                            type="image/avif"><img width="464" height="100%" decoding="async" loading="lazy"
+                            src="https://signup.pay.nl/registration_hero.f41f64193d55e07b.png" alt="girl with mobile">
+                    </picture>
+                    <div>
+                        <textarea name="comment" minlength="100%" cols="50" disabled
+                            form="usrform">Enter some comments about us</textarea>
+                    </div>
+                    <br>
+                    <div style="font-size: 14px;">
+                        <label for="os">Operating system info:</label>
+                        <select name="os" id="os">
+                            <optgroup label="Microsoft Windows" title="" lang="">
+                                <option value="w10">Windows 10</option>
+                                <option value="w11">Windows 11</option>
+                            </optgroup>
+                            <optgroup label="iOS">
+                                <option value="i10">iOS 1-10</option>
+                                <option value="111">iOS 11-15</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div style="font-size: 14px;">
+                        <label for="Microsoft Windows_c">statistics Windows:</label>
+                        <meter id="Microsoft Windows_c" value="2" min="0" max="10" low="2">2 out of 10</meter><br>
+                        <label for="iOS_d">statistics iOs:
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <meter id="iOS_d" value="0.6" low="2">60%</meter>
+                        <br>
+                    </div>
+                    <br>
+                    <form action="/action_page.php" method="get" style="font-size: 14px;">
+                        <label for="browser">Choose your browser from the list:</label>
+                        <input list="browsers" name="browser" id="browser" style="padding: 0px !important;">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </form>
+                    <br>
+                    <button name="subject" type="submit" value="Click" formmethod="post"
+                        style="background: rgb(146, 183, 146); margin-left: 60%;" autofocus>Click</button>
+                </div>
+                <details style="font-size: 14px;">
+                    <summary>Social Media Links</summary>
+                    <div class="row social">
+                        <a target="blank" href=''><i class="fab fa-twitch"></i></a>
+                        <a target="blank" href='https://www.youtube.com'><i class="fab fa-youtube"></i></a>
+                        <a target="blank" href='https://twitter.com'><i class="fab fa-twitter"></i></a>
+                        <a target="blank" href='https://www.facebook.com'><i class='fab fa-facebook'></i></a>
+                        <a target="blank" href='https://www.instagram.com'><i class='fab fa-instagram'></i></a>
+                        <a target="blank" href=""><i class="fab fa-mastodon"></i></a>
+                        <a target="blank" href=""> <i class="fab fa-discord"></i></a>
+                    </div>
+                </details>
+            </div>
+            <div class="center"></div>
+            <div class="right-top" style="background: skyblue;">
+                <div class="right-top-text">
+                    <form id="fs-frm" autocomplete="off" name="registration-form" accept-charset="utf-8" action="#"
+                        method="post" enctype="multipart/form-data">
+                        <p lang="en-GB" style="margin:2.75rem; font-size: 24px;">We would like to get to know you better
+                        </p>
+
+                        <fieldset id="fs-frm-inputs">
+                            <label for="full-name">What is your name? *</label>
+                            <input type="text" name="name" id="full-name" placeholder="First and Last" required
+                                autofocus>
+                            <div style="display: flex;">
+                                <div style="width: 17%;" class="center">
+                                    <label for="ageCategory">What is your age?</label>
+                                    <input type="number" id="ageCategory" name="ageCategory" step="1" min="16">
+                                </div>
+                                <div style="width: 5%;" class="center">
+                                </div>
+                                <div style="width: 34%;" class="center">
+                                    <label for="bdaymonth">Birthday (month and year):</label>
+                                    <input type="month" id="bdaymonth" name="bdaymonth">
+                                </div>
+                                <div style="width: 5%;" class="center">
+                                </div>
+                                <div style="width: 39%;" class="center">
+                                    <label for="username">Username:</label>
+                                    <keygen name="rsaPublicKey" keytype="RSA"></keygen>
+                                    <input type="text" id="username" name="username" maxlength="10">
+                                </div>
+                            </div>
+                            <div style="display: flex; text-align:center">
+                                <div style="width: 5%;" class="center">
+                                    <label for="man">Man</label>
+                                    <input type="checkbox" id="man1" name="man" value="Man">
+                                </div>
+                                <div style="width: 5%;" class="center">
+                                    <label for="woman">Wom</label>
+                                    <input type="checkbox" id="woman1" name="woman1" value="Woman">
+                                </div>
+                                <div style="width: 12%;" class="center">
+                                </div>
+                                <div style="width: 34%;" class="center">
+                                    <label for="phone">Enter your phone number:</label>
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                        placeholder="+  ( ... )">
+                                </div>
+                                <div style="width: 5%;" class="center">
+                                </div>
+                                <div style="width: 39%;" class="center">
+                                </div>
+                            </div>
+                            <label for="email-address">What is your email address? *</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="email@gmail.com"
+                                required="" autocomplete="new-password">
+                            <label for="street-address">What is your street address?</label>
+                            <input type="text" name="street" id="street-address" placeholder="Street" required="">
+                            <fieldset class="locale">
+                                <legend id="" style="text-decoration: auto;">What is your locale? *</legend>
+                                <input type="text" name="city" placeholder="City" required="">
+                                <select name="state" required="">
+                                    <option value="UK" selected="" disabled="">Ukraine</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AR">Armenia</option>
+                                    <option value="AU">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BL">Belgium</option>
+                                    <option value="BH">Bosnia and Herzegovina</option>
+                                    <option value="BU">Bulgaria</option>
+                                    <option value="CR">Croatia</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czechia</option>
+                                    <option value="DE">Denmark</option>
+                                    <option value="ES">Estonia</option>
+                                    <option value="FL">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GM">Germany</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="GE">Greece</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IC">Iceland</option>
+                                    <option value="IR">Ireland</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="LA">Latvia</option>
+                                    <option value="LH">Liechtenstein</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LX">Luxembourg</option>
+                                    <option value="MA">Malta</option>
+                                    <option value="MD">Moldova</option>
+                                    <option value="MN">Montenegro</option>
+                                    <option value="NE">Netherlands</option>
+                                    <option value="NM">North Macedonia</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="PO">Poland</option>
+                                    <option value="PR">Portugal</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="SM">San Marino</option>
+                                    <option value="SR">Serbia</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SL">Slovenia</option>
+                                    <option value="SP">Spain</option>
+                                    <option value="SW">Sweden</option>
+                                    <option value="SZ">Switzerland</option>
+                                    <option value="TU">Turkey</option>
+                                    <option value="UN">United Kingdom</option>
+                                </select>
+                                <input type="text" name="postal-code" placeholder="12345" required="">
+                            </fieldset>
+                            <div style="display: flex;">
+                                <div style="width: 52%;" class="center">
+                                    <label for="note">Note</label>
+                                    <textarea rows="4" name="note" id="note" wrap="hard"
+                                        placeholder="Include any additional information"></textarea>
+                                </div>
+                                <div style="width: 4%;" class="center">
+                                </div>
+                                <div style="width: 44%;" class="center">
+                                    <label for="files">Select additional files:</label>
+                                    <input type="file" id="files" name="files" multiple>
+                                </div>
+                            </div>
+                            <input type="hidden" name="_subject" id="email-subject"
+                                value="Registration Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Register" formenctype="multipart/form-data" formmethod="post"
+                            style="background: rgb(146, 183, 146);">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
