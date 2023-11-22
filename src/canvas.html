@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="Author" lang="ua" content="Стаднічук Сщфія">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="Description" content="Web-сторiнка, Web Developer's Handbook.HTML Reference.">
+    <meta name="Keywords" content="Web-сторiнка, растрова графіка ">
+    <link rel="stylesheet" href="../mycss/canvas.css">
+    <link rel="stylesheet" href="../mycss/info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Lab 8 (Сторінка растрової графіки)</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-con header-padding">
+            <div class="header-right header-padding">
+                <ul class="header-list">
+                    <li><a class="hover" href="./register.html"><u>Register</u></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <!-- <h1> Лабораторна робота №8. Приклад. </h1> -->
+            <canvas id="drawingCanvas" width="1300" height="800">Браузер не підтримує тег
+                canvas</canvas>
+            <div style="display: flex; flex-direction: column;">
+                <button style="width: 150px; padding: 10px;" onclick="getAllFigures()"> Add all figures</button>
+                <button style="width: 150px; padding: 10px;" onclick="translateSquares()"> Translate scare </button>
+                <button style="width: 150px; padding: 10px;" onclick="reset()"> Reset</button>
+                <button style="width: 150px; padding: 10px;" onclick="moveCircle()">Add
+                    circle</button>
+                <button style="width: 150px; padding: 10px" id="clearId" onclick="moveCircle()">Initial
+                    circle</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/canvasScript.js"> </script>
+</body>
+
+</html>

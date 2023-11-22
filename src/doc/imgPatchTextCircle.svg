@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500"
+                width="200" height="200" class="text-patch-cr;">
+    <title>Circle Logo</title>
+    <defs>
+        <path d="M243.2, 382.4c-74.8,   
+                0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5,
+                135.5 S318, 382.4, 243.2, 382.4z" id="textcircle" transform="rotate(5 50 50)"/>
+    </defs>
+    <text stroke="blue" stroke-width="2" dy="2" textLength="1200">
+        <textPath xlink:href="#textcircle">
+            My logo text circle
+        </textPath>
+    </text>
+</svg>
+            

@@ -1,0 +1,44 @@
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" viewBox="0 0 1300 800">
+
+            <text x="15" y="25" font-size="14">SVG lab4 </text>
+            <rect x="0" y="0" width="1300" height="800" fill="none" stroke="black" stroke-width="5px"
+                stroke-opacity="0.5" />
+
+            <line x1="10" y1="400" x2="1280" y2="400" stroke="black" stroke-width="3" />
+            <line x1="1280" y1="400" x2="1270" y2="395" stroke="black" stroke-width="3" />
+            <line x1="1280" y1="400" x2="1270" y2="405" stroke="black" stroke-width="3" />
+
+            <line x1="400" y1="20" x2="400" y2="790" stroke="black" stroke-width="3" />
+            <line x1="400" y1="20" x2="405" y2="25" stroke="black" stroke-width="3" />
+            <line x1="400" y1="20" x2="395" y2="25" stroke="black" stroke-width="3" />
+
+            <text x="410" y="20" font-size="20">Y</text>
+            <text x="1280" y="420" font-size="20">X</text>
+
+            <text x="380" y="205" font-size="20">2</text>
+            <text x="410" y="320" font-size="20">1</text>
+            <text x="380" y="420" font-size="20">0</text>
+            <text x="375" y="505" font-size="20">-1</text>
+            <text x="375" y="605" font-size="20">-2</text>
+
+            <text x="495" y="420" font-size="20">1</text>
+            <text x="595" y="420" font-size="20">2</text>
+            <text x="695" y="420" font-size="20">3</text>
+            <text x="785" y="420" font-size="20">4</text>
+            <text x="905" y="420" font-size="20">5</text>
+
+            <circle cx="300" cy="300" r="100" fill="blue" stroke="black" stroke-width="2" />
+            <circle cx="800" cy="300" r="100" fill="blue" stroke="black" stroke-width="2" />
+
+            <rect x="400" y="200" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+            <rect x="500" y="300" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+            <rect x="400" y="500" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+            <rect x="800" y="400" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+            <rect x="900" y="500" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+
+            <polygon points="500,200 700,200 700,300" stroke="black" stroke-width="2" fill="blue" />
+            <polygon points="600,500 600,600 800,600" stroke="black" stroke-width="2" fill="blue" />
+            <polygon points="800,500 800,600 900,600" stroke="black" stroke-width="2" fill="blue" />
+
+        </svg>

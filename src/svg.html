@@ -1,0 +1,164 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html lang="en">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="Author" lang="ua" content="Стаднічук Софія">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="Description" content="Web-сторiнка, Web Developer's Handbook.HTML Reference.">
+    <meta name="Keywords" content="Web-сторiнка, растрова графіка ">
+    <link rel="stylesheet" href="../mycss/canvas.css">
+    <link rel="stylesheet" href="../mycss/info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Lab 4 (svg)</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-con header-padding">
+            <div class="header-right header-padding">
+                <ul class="header-list">
+                    <li><a class="hover" href="./register.html"><u>Register</u></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content" style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: row;">
+                <svg version=" 1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+                    width="1300px" height="800px" id="transformCircle">
+                    <defs>
+                        <!-- <filter id="f1" x="0" y="0">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                        </filter> -->
+                        <!-- <filter id="f2" x="0" y="0">
+                            <feOffset result="offOut" in="SourceGraphic" dx="15" dy="15" />
+                            <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                        </filter> -->
+                        <g fill="grey" transform="rotate(-10 50 100)
+                                   translate(-36 45.5)
+                                   skewX(40)
+                                   scale(1 0.5)">
+                            <path id="heart"
+                                d="M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
+                        </g>
+                    </defs>
+
+                    <text x="15" y="25" font-size="14">SVG lab4 </text>
+                    <rect x="0" y="0" width="1300" height="800" fill="none" stroke="black" stroke-width="5px"
+                        stroke-opacity="0.5" />
+
+                    <line x1="10" y1="400" x2="1280" y2="400" stroke="black" stroke-width="3" />
+                    <line x1="1280" y1="400" x2="1270" y2="395" stroke="black" stroke-width="3" />
+                    <line x1="1280" y1="400" x2="1270" y2="405" stroke="black" stroke-width="3" />
+
+                    <line x1="400" y1="20" x2="400" y2="790" stroke="black" stroke-width="3" />
+                    <line x1="400" y1="20" x2="405" y2="25" stroke="black" stroke-width="3" />
+                    <line x1="400" y1="20" x2="395" y2="25" stroke="black" stroke-width="3" />
+
+                    <text x="410" y="20" font-size="20">Y</text>
+                    <text x="1280" y="420" font-size="20">X</text>
+
+                    <text x="380" y="205" font-size="20">2</text>
+                    <text x="410" y="320" font-size="20">1</text>
+                    <text x="380" y="420" font-size="20">0</text>
+                    <text x="375" y="505" font-size="20">-1</text>
+                    <text x="375" y="605" font-size="20">-2</text>
+
+                    <text x="495" y="420" font-size="20">1</text>
+                    <text x="595" y="420" font-size="20">2</text>
+                    <text x="695" y="420" font-size="20">3</text>
+                    <text x="785" y="420" font-size="20">4</text>
+                    <text x="905" y="420" font-size="20">5</text>
+
+                    <circle cx="300" cy="300" r="100" fill="blue" stroke="black" stroke-width="2" id="leftCircle" />
+                    <circle cx="300" cy="300" r="100" fill="blue" stroke="black" stroke-width="2"
+                        transform="translate(500)" />
+
+                    <rect x="400" y="200" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+                    <rect x="400" y="200" width="100" height="100" fill="blue" stroke="black" stroke-width="2"
+                        transform="translate(100, 100) rotate(0)" />
+                    <rect x="400" y="500" width="100" height="100" fill="blue" stroke="black" stroke-width="2"
+                        filter="url(#f1)" />
+                    <rect x=" 800" y="400" width="100" height="100" fill="blue" stroke="black" stroke-width="2" />
+                    <rect x="900" y="500" width="100" height="100" fill="blue" stroke="black" stroke-width="2">
+                        <animate attributeName="rx" values="0;50;0" dur="10s" repeatCount="3" />
+                    </rect>
+
+                    <polygon points="500,200 700,200 700,300" stroke="black" stroke-width="2" fill="blue" />
+                    <polygon points="600,500 600,600 800,600" stroke="black" stroke-width="2" fill="blue"
+                        filter="url(#f2)" />
+                    <polygon points="800,500 800,600 900,600" stroke="black" stroke-width="2" fill="blue" />
+                </svg>
+                <div style="display: flex; flex-direction: column;">
+                    <button type="button" style="width: 200px; padding: 10px;" onclick="runRightCircle()">Click
+                        right</button>
+                    <button type="button" style="width: 200px; padding: 10px" onclick="runLeftCircle()">Click
+                        left</button>
+                </div>
+            </div>
+            <!-- <div>
+                <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="10" height="10">
+                        <animate attributeName="rx" values="0;5;0" dur="10s" repeatCount="indefinite" />
+                    </rect>
+                </svg>
+            </div> -->
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 700 300">
+                    <defs>
+                        <path id="MyPath" d="M 0 50 C  200 200 300   0 600 100 " />
+                        <linearGradient id="grad">
+                            <stop stop-color="#c00" />
+                            <stop stop-color="#da0" offset="100%" />
+                        </linearGradient>
+                    </defs>
+
+                     <text fill="url(#grad)" textLength="500" lengthAdjust="spacingAndGlyphs" kerning="auto">
+                        <textPath xlink:href="#MyPath" method="stretch" spacing="auto">
+                            Lab #4.
+                            <tspan fill="#bbc42a" font-size="10">Student</tspan>
+                            <tspan dy="-5 -4 -3 -2 -1 0 1">(group #1)</tspan>
+                            <tspan dy="10">Stadnichuk Sofia</tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <!-- <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000"
+                    height="400">
+                    <path id="path" stroke-width="20" />
+                </svg>
+            </div> -->
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 700 300">
+                    <defs>
+                        <filter id="f1" x="0" y="0">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <!-- <div>
+                <svg version="1.1" id="ls_svg" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 700 300"
+                    xml:space="preserve">
+                    <circle id="leftCircle" class="circles" cx="100" cy="100" r="100" />
+                </svg>
+            </div> -->
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/canvasScript.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+body {
+    background-color: #fefefe;
+    color: #231f21;
+    font-family: 'Roboto', sans-serif;
+}
+
+#myProgress {
+    width: 420px;
+    background-color: #d9d9f2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#myBar {
+    width: 0%;
+    height: 5px;
+    background-color: #ffc266;
+    border-radius: 10px;
+}
+
+.logo {
+    fill: red;
+}
+
+.btn-action {
+    cursor: pointer;
+    padding-top: 10px;
+    width: 30px;
+}
+
+.btn-ctn,
+.infos-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos-ctn {
+    padding-top: 20px;
+}
+
+.btn-ctn>div {
+    padding: 5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.infos-ctn>div {
+    margin-bottom: 8px;
+    color: #ffc266;
+}
+
+.first-btn {
+    margin-left: 3px;
+}
+
+.duration {
+    margin-left: 10px;
+}
+
+.title {
+    margin-left: 10px;
+    width: 210px;
+    text-align: center;
+}
+
+.player-ctn {
+    border-radius: 15px;
+    width: 420px;
+    padding: 10px;
+    background-color: #373737;
+    margin: auto;
+}
+
+.playlist-track-ctn {
+    display: flex;
+    background-color: #464646;
+    margin-top: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playlist-track-ctn:last-child {
+    /*border: 1px solid #ffc266; */
+}
+
+.playlist-track-ctn>div {
+    margin: 10px;
+}
+
+.playlist-info-track {
+    width: 80%;
+}
+
+.playlist-info-track,
+.playlist-duration {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #e9cc95;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.playlist-ctn {
+    padding-bottom: 20px;
+}
+
+.active-track {
+    background: #4d4d4d;
+    color: #ffc266 !important;
+    font-weight: bold;
+
+}
+
+.active-track>.playlist-info-track,
+.active-track>.playlist-duration,
+.active-track>.playlist-btn-play {
+    color: #ffc266 !important;
+}
+
+
+.playlist-btn-play {
+    pointer-events: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fas {
+    color: #ffc266;
+    font-size: 20px;
+}
+
+
+/* video */
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+
+.video {
+    font-family: calibri, arial, sans-serif;
+    font-size: 62.5%
+}
+
+/* everything above this can be deleted if you want to use the selector, it just tidies the pen up a bit */
+.videoHolder,
+.videoSelector .item {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px
+}
+
+.videoSelector .item img {
+    overflow: hidden;
+    opacity: .6;
+    transition: opacity .8s
+}
+
+.videoPlayer iframe,
+.videoSelector img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.videoContent {
+    background: #ccc;
+    line-height: 1.25em;
+    padding: .25em;
+    font-size: 1.6em;
+}
+
+.videoSelector .item {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding-bottom: 12.49465%
+}
+
+.videoSelector .item img .selected {
+    outline: 3px solid #00f;
+    opacity: 1
+}
+
+.videoSelectorWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    position: relative
+}

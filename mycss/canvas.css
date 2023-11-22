@@ -1,0 +1,17 @@
+canvas { 
+    border: 1px dashed rgb(255, 234, 0);
+}
+body {
+    bgcolor : #cccccc;
+}
+
+svg text {
+    stroke: #ee0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    filter: drop-shadow(2px 2px 2px #a60);
+}
+
+  
+
